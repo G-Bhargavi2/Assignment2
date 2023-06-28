@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <title></title>
+</head>
+<body>
+    <div class="d-flex justify-content-center mt-5 mb-5">
+        <div class="d-flex flex-column justify-content-center text-center w-70 ">
+            <h1 class=" text-center mb-3"><%= title %></h1>
+            <div class="d-flex flex-column justify-content-center">
+            <form method = "POST" action = "/order_details">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row justify-content-between mt-3 ">
+                            <label>Order Date</label>
+                            <input type = "date" id = "orderDate" name = "orderDate" /> 
+        
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3 ">
+                            <label>Company</label>
+                            <input type = "text" id = "company" name = "company"  />
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Owner</label>
+                            <input type = "text" id = "owner" name = "owner"   /> 
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Item</label>
+                            <input type = "text" id = "item" name = "item" /> 
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Quantity</label>
+                            <input type = "text" id = "quantity" name = "quantity" />    
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Weight</label>
+                            <input type = "text" id = "weight" name = "weight"  />
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Request for Shipment</label>
+                            <input type = "text" id = "reqShipment" name = "reqShipment"   /> 
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label> Tracking ID</label>
+                            <input type="text" id = "trackingId" name = "trackingId"  />
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Shipment Size</label>
+                            <input type = "text" id = "shipmentSize" name = "shipmentSize" />
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Box Count</label>
+                            <input type = "text" id = "boxCount" name = "boxCount" /> 
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Specification</label>
+                            <input type = "text" id = "specification" name = "specification"/>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mt-3">
+                            <label>Checklist Quantity</label>
+                            <input type = "text" id = "checklistQuantity" name = "checklistQuantity"  /> 
+                        </div>
+                        <input type = "submit" class="btn btn-primary mt-4" value="Submit" />
+                    </div>    
+                </form>
+            </div>
+              
+        </div>
+    </div>
+</body>    
+</html>
